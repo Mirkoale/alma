@@ -225,6 +225,10 @@ header {
         h3 {
             font-size: 24px;
             text-align: center;
+
+            @media screen and (width < 576px) {
+                font-size: 16px;
+            }
         }
     }
 
@@ -243,10 +247,6 @@ header {
             width: 92%;
         }
 
-        .intro,
-        h2 {
-            text-align: center;
-        }
     }
 }
 
@@ -292,7 +292,7 @@ header {
         .grid {
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(4, auto);
-            align-items: end;
+            gap: 80px 24px;
             width: 92%;
         }
 
@@ -325,6 +325,10 @@ header {
         h3 {
             font-size: 24px;
             text-align: center;
+
+            @media screen and (width < 576px) {
+                font-size: 16px;
+            }
         }
     }
 
@@ -343,10 +347,6 @@ header {
             width: 92%;
         }
 
-        .intro,
-        h2 {
-            text-align: center;
-        }
     }
 }
 
@@ -362,6 +362,10 @@ header {
         width: fit-content;
         margin-bottom: 16px;
         font-size: 32px;
+
+        @media screen and (width < 576px) {
+            font-size: 28px;
+        }
     }
 }
 

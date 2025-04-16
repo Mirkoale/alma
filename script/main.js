@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
-function menuBtnFunction(menuBtn) {
+function menuBtnFunction(menuBtn = burgerIcon) {
     let header = document.querySelector('header');
     body.classList.toggle("body-block");
     header.classList.toggle('menu-on');

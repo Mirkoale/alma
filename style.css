@@ -445,6 +445,12 @@ header .logo img {
   font-size: 24px;
   text-align: center;
 }
+@media screen and (width < 576px) {
+  .corsi .single-corso h3,
+  .corsi .insegnante h3 {
+    font-size: 16px;
+  }
+}
 .corsi .descrizione-fondo {
   margin: 80px auto;
 }
@@ -462,10 +468,6 @@ header .logo img {
   .corsi .descrizione-fondo {
     width: 92%;
   }
-}
-.corsi .descrizione-fondo .intro,
-.corsi .descrizione-fondo h2 {
-  text-align: center;
 }
 
 .insegnanti {
@@ -505,7 +507,7 @@ header .logo img {
   .insegnanti .grid {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, auto);
-    align-items: end;
+    gap: 80px 24px;
     width: 92%;
   }
   .insegnanti .second-grid {
@@ -534,6 +536,12 @@ header .logo img {
   font-size: 24px;
   text-align: center;
 }
+@media screen and (width < 576px) {
+  .insegnanti .single-corso h3,
+  .insegnanti .insegnante h3 {
+    font-size: 16px;
+  }
+}
 .insegnanti .descrizione-fondo {
   margin: 80px auto;
 }
@@ -552,10 +560,6 @@ header .logo img {
     width: 92%;
   }
 }
-.insegnanti .descrizione-fondo .intro,
-.insegnanti .descrizione-fondo h2 {
-  text-align: center;
-}
 
 .description .intro {
   font-family: "Mr Dafoe", serif;
@@ -567,6 +571,11 @@ header .logo img {
   width: fit-content;
   margin-bottom: 16px;
   font-size: 32px;
+}
+@media screen and (width < 576px) {
+  .description h2 {
+    font-size: 28px;
+  }
 }
 
 section.logos {
@@ -650,7 +659,7 @@ section.contatti .container .icon-box .icon .fa {
 }
 
 footer {
-  height: 80px;
+  min-height: 80px;
   padding: 16px;
   background-color: #000;
   color: #adadad;
