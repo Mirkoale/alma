@@ -6,8 +6,8 @@ html {
 }
 
 .body-block {
-        height: 100vh;
-        overflow-y: hidden;
+    height: 100vh;
+    overflow-y: hidden;
 }
 
 header {
@@ -45,7 +45,7 @@ header {
     padding: 40px;
     overflow: hidden;
     transition: all .4s ease-in;
-    background-image: url("./media/hip-hop-2159913_1280.jpg");
+    background-image: url("/media/hip-hop-bg.jpg");
     background-repeat: no-repeat;
     background-position: center 20%;
     background-size: cover;
@@ -58,13 +58,13 @@ header {
         background-color: #0005;
         color: $white;
         font-size: 36px;
-        
+
         @media screen and (width < 768px) {
             font-size: 24px;
         }
     }
 
-    @media screen and (width > 768px){
+    @media screen and (width > 768px) {
         div.arrow {
             display: none;
         }
@@ -83,7 +83,7 @@ header {
                     transition: all .4s ease-in;
                 }
             }
-    
+
             .hero-info {
                 margin-bottom: 0;
                 transition: all .4s ease-in;
@@ -96,7 +96,7 @@ header {
             height: 40px;
 
             // cursor: pointer;
-            
+
             img {
                 transform: rotate(180deg);
             }
@@ -124,7 +124,7 @@ header {
             flex-grow: 1;
             text-align: center;
 
-            @media screen and (width >= 769px) {
+            @media screen and (width >=769px) {
                 &:nth-child(3) {
                     border-inline: 3px solid $orange;
                 }
@@ -132,12 +132,12 @@ header {
         }
     }
 
-    @media screen and (width <= 768px) {
+    @media screen and (width <=768px) {
         .hero-info {
             flex-direction: column;
             row-gap: 12px;
 
-            div { 
+            div {
                 &:nth-child(3) {
                     padding-inline: 20px;
                     border-block: 1px solid $orange;
@@ -148,13 +148,21 @@ header {
     }
 }
 
-.corsi , .insegnanti{
+.corsi {
     padding: 120px 0;
 
-    @media screen and (width >= 1200px) {
+
+    .grid {
+        display: grid;
+        align-items: start;
+        gap: 80px 20px;
+        margin: 0 auto;
+    }
+
+    @media screen and (width >=1200px) {
         .grid {
-            grid-template-columns: repeat(4, 1fr); 
-            grid-template-rows: repeat(1, auto);  
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(1, auto);
             width: 80%;
         }
 
@@ -179,7 +187,7 @@ header {
         }
     }
 
-    @media screen and (width <= 768px) {
+    @media screen and (width <=768px) {
         .grid {
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(4, auto);
@@ -194,11 +202,6 @@ header {
         }
     }
 
-    .grid {
-        display: grid;
-        align-items: start;
-        margin: 0 auto;
-    }
 
     .second-grid {
         display: grid;
@@ -207,13 +210,14 @@ header {
         margin: 0 auto;
         margin-top: 80px;
 
-            img {
-                display: block;
-                margin: 0 auto;
-            }  
+        img {
+            display: block;
+            margin: 0 auto;
+        }
     }
 
-    .single-corso, .insegnante {
+    .single-corso,
+    .insegnante {
         img {
             max-width: 100%;
         }
@@ -227,19 +231,120 @@ header {
     .descrizione-fondo {
         margin: 80px auto;
 
-        @media screen and (width >= 1200px) {
-            width: 80%; 
+        @media screen and (width >=1200px) {
+            width: 80%;
         }
-    
+
         @media screen and (768px < width < 1200px) {
-            width: 90%; 
+            width: 90%;
         }
-    
-        @media screen and (width <= 768px) {
+
+        @media screen and (width <=768px) {
             width: 92%;
         }
 
-        .intro, h2 {
+        .intro,
+        h2 {
+            text-align: center;
+        }
+    }
+}
+
+.insegnanti {
+    padding: 120px 0;
+
+    .grid {
+        display: grid;
+        align-items: start;
+        gap: 80px;
+        margin: 0 auto;
+    }
+
+    @media screen and (width >=1200px) {
+        .grid {
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(1, auto);
+            width: 80%;
+        }
+
+        .second-grid {
+            grid-template-columns: 1fr 3fr;
+            grid-template-rows: auto;
+            width: 80%;
+        }
+    }
+
+    @media screen and (768px < width < 1200px) {
+        .grid {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, auto);
+            width: 90%;
+        }
+
+        .second-grid {
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: auto;
+            width: 90%;
+        }
+    }
+
+    @media screen and (width <=768px) {
+        .grid {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(4, auto);
+            align-items: end;
+            width: 92%;
+        }
+
+        .second-grid {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            width: 92%;
+        }
+    }
+
+    .second-grid {
+        display: grid;
+        align-items: end;
+        gap: 80px;
+        margin: 0 auto;
+        margin-top: 80px;
+
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+    .single-corso,
+    .insegnante {
+        img {
+            max-width: 100%;
+        }
+
+        h3 {
+            font-size: 24px;
+            text-align: center;
+        }
+    }
+
+    .descrizione-fondo {
+        margin: 80px auto;
+
+        @media screen and (width >=1200px) {
+            width: 80%;
+        }
+
+        @media screen and (768px < width < 1200px) {
+            width: 90%;
+        }
+
+        @media screen and (width <=768px) {
+            width: 92%;
+        }
+
+        .intro,
+        h2 {
             text-align: center;
         }
     }
@@ -260,13 +365,6 @@ header {
     }
 }
 
-.corsi .grid {
-    gap: 80px 20px;
-}
-
-.insegnanti .grid {
-    gap: 80px;
-}
 
 section.logos {
     display: flex;
@@ -300,7 +398,7 @@ section.logos {
 
 section.contatti {
     position: relative;
-    background-image: url("../../media/hip-hop-2159913_1280.jpg");
+    background-image: url("/media/hip-hop-bg.jpg");
     background-position: center;
     background-size: cover;
     padding-block: 120px;
@@ -316,10 +414,10 @@ section.contatti {
         backdrop-filter: blur(10px);
 
         // @media screen and (width <= 576px) {
-           
+
         // }
 
-        @media screen and (width >= 1200px) {
+        @media screen and (width >=1200px) {
             width: 80%;
         }
 
@@ -327,9 +425,9 @@ section.contatti {
             width: 90%;
         }
 
-        @media screen and (width <= 768px) {
+        @media screen and (width <=768px) {
             flex-direction: column;
-           gap: 32px;
+            gap: 32px;
             width: 70%;
         }
 
@@ -345,7 +443,7 @@ section.contatti {
                 width: 72px;
                 height: 72px;
                 border-radius: 50%;
-                box-shadow: inset -4px -8px 15px -3px #0000004d,-2px -2px 10px -3px #ffffff60, 0 10px 15px -3px #00000080;
+                box-shadow: inset -4px -8px 15px -3px #0000004d, -2px -2px 10px -3px #ffffff60, 0 10px 15px -3px #00000080;
                 text-align: center;
 
                 .fa {
@@ -357,7 +455,7 @@ section.contatti {
 }
 
 footer {
-    height: 80px;
+    min-height: 80px;
     padding: 16px;
     background-color: $black;
     color: #adadad;

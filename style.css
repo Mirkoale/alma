@@ -294,7 +294,7 @@ header .logo img {
   padding: 40px;
   overflow: hidden;
   transition: all 0.4s ease-in;
-  background-image: url("./media/hip-hop-2159913_1280.jpg");
+  background-image: url("/media/hip-hop-bg.jpg");
   background-repeat: no-repeat;
   background-position: center 20%;
   background-size: cover;
@@ -379,88 +379,181 @@ header .logo img {
   }
 }
 
-.corsi, .insegnanti {
+.corsi {
   padding: 120px 0;
 }
+.corsi .grid {
+  display: grid;
+  align-items: start;
+  gap: 80px 20px;
+  margin: 0 auto;
+}
 @media screen and (width >= 1200px) {
-  .corsi .grid, .insegnanti .grid {
+  .corsi .grid {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(1, auto);
     width: 80%;
   }
-  .corsi .second-grid, .insegnanti .second-grid {
+  .corsi .second-grid {
     grid-template-columns: 1fr 3fr;
     grid-template-rows: auto;
     width: 80%;
   }
 }
 @media screen and (768px < width < 1200px) {
-  .corsi .grid, .insegnanti .grid {
+  .corsi .grid {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, auto);
     width: 90%;
   }
-  .corsi .second-grid, .insegnanti .second-grid {
+  .corsi .second-grid {
     grid-template-columns: 1fr 2fr;
     grid-template-rows: auto;
     width: 90%;
   }
 }
 @media screen and (width <= 768px) {
-  .corsi .grid, .insegnanti .grid {
+  .corsi .grid {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, auto);
     align-items: end;
     width: 92%;
   }
-  .corsi .second-grid, .insegnanti .second-grid {
+  .corsi .second-grid {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     width: 92%;
   }
 }
-.corsi .grid, .insegnanti .grid {
-  display: grid;
-  align-items: start;
-  margin: 0 auto;
-}
-.corsi .second-grid, .insegnanti .second-grid {
+.corsi .second-grid {
   display: grid;
   align-items: end;
   gap: 80px;
   margin: 0 auto;
   margin-top: 80px;
 }
-.corsi .second-grid img, .insegnanti .second-grid img {
+.corsi .second-grid img {
   display: block;
   margin: 0 auto;
 }
-.corsi .single-corso img, .corsi .insegnante img, .insegnanti .single-corso img, .insegnanti .insegnante img {
+.corsi .single-corso img,
+.corsi .insegnante img {
   max-width: 100%;
 }
-.corsi .single-corso h3, .corsi .insegnante h3, .insegnanti .single-corso h3, .insegnanti .insegnante h3 {
+.corsi .single-corso h3,
+.corsi .insegnante h3 {
   font-size: 24px;
   text-align: center;
 }
-.corsi .descrizione-fondo, .insegnanti .descrizione-fondo {
+.corsi .descrizione-fondo {
   margin: 80px auto;
 }
 @media screen and (width >= 1200px) {
-  .corsi .descrizione-fondo, .insegnanti .descrizione-fondo {
+  .corsi .descrizione-fondo {
     width: 80%;
   }
 }
 @media screen and (768px < width < 1200px) {
-  .corsi .descrizione-fondo, .insegnanti .descrizione-fondo {
+  .corsi .descrizione-fondo {
     width: 90%;
   }
 }
 @media screen and (width <= 768px) {
-  .corsi .descrizione-fondo, .insegnanti .descrizione-fondo {
+  .corsi .descrizione-fondo {
     width: 92%;
   }
 }
-.corsi .descrizione-fondo .intro, .corsi .descrizione-fondo h2, .insegnanti .descrizione-fondo .intro, .insegnanti .descrizione-fondo h2 {
+.corsi .descrizione-fondo .intro,
+.corsi .descrizione-fondo h2 {
+  text-align: center;
+}
+
+.insegnanti {
+  padding: 120px 0;
+}
+.insegnanti .grid {
+  display: grid;
+  align-items: start;
+  gap: 80px;
+  margin: 0 auto;
+}
+@media screen and (width >= 1200px) {
+  .insegnanti .grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, auto);
+    width: 80%;
+  }
+  .insegnanti .second-grid {
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto;
+    width: 80%;
+  }
+}
+@media screen and (768px < width < 1200px) {
+  .insegnanti .grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    width: 90%;
+  }
+  .insegnanti .second-grid {
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    width: 90%;
+  }
+}
+@media screen and (width <= 768px) {
+  .insegnanti .grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+    align-items: end;
+    width: 92%;
+  }
+  .insegnanti .second-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    width: 92%;
+  }
+}
+.insegnanti .second-grid {
+  display: grid;
+  align-items: end;
+  gap: 80px;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+.insegnanti .second-grid img {
+  display: block;
+  margin: 0 auto;
+}
+.insegnanti .single-corso img,
+.insegnanti .insegnante img {
+  max-width: 100%;
+}
+.insegnanti .single-corso h3,
+.insegnanti .insegnante h3 {
+  font-size: 24px;
+  text-align: center;
+}
+.insegnanti .descrizione-fondo {
+  margin: 80px auto;
+}
+@media screen and (width >= 1200px) {
+  .insegnanti .descrizione-fondo {
+    width: 80%;
+  }
+}
+@media screen and (768px < width < 1200px) {
+  .insegnanti .descrizione-fondo {
+    width: 90%;
+  }
+}
+@media screen and (width <= 768px) {
+  .insegnanti .descrizione-fondo {
+    width: 92%;
+  }
+}
+.insegnanti .descrizione-fondo .intro,
+.insegnanti .descrizione-fondo h2 {
   text-align: center;
 }
 
@@ -474,14 +567,6 @@ header .logo img {
   width: fit-content;
   margin-bottom: 16px;
   font-size: 32px;
-}
-
-.corsi .grid {
-  gap: 80px 20px;
-}
-
-.insegnanti .grid {
-  gap: 80px;
 }
 
 section.logos {
@@ -513,7 +598,7 @@ section.logos img {
 
 section.contatti {
   position: relative;
-  background-image: url("../../media/hip-hop-2159913_1280.jpg");
+  background-image: url("/media/hip-hop-bg.jpg");
   background-position: center;
   background-size: cover;
   padding-block: 120px;
