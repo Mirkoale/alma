@@ -1,0 +1,27 @@
+{
+  "name": "standard-sass-configuration",
+  "version": "1.0.0",
+  "description": "configurazione copia-incolla di sass",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "lint": "stylelint --fix assets/scss/*",
+    "prestyle": "npm run lint",
+    "style": "sass assets/scss/alma-theme-compiler.scss:style.css",
+    "build": "npm run style && sass --quiet assets/scss/style-compiler.scss:style-compiled.css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "da inserire"
+  },
+  "author": "Mirko Benini",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.85.0"
+  },
+  "devDependencies": {
+    "stylelint": "^16.14.1",
+    "stylelint-config-standard-scss": "^14.0.0",
+    "stylelint-order": "^6.0.4"
+  }
+}

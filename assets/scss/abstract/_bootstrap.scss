@@ -1,0 +1,10 @@
+@use "variables" as *;
+
+.border-b-y {
+    border-bottom: 3px solid $yellow;
+}
+
+.border-b-g {
+    border-bottom: 3px solid $green;
+}
+
