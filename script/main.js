@@ -41,7 +41,7 @@ arrow.addEventListener('click', (e) => {
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        entry.target.classList.add('bounce-in-bottom');
+        entry.target.classList.add('slide-in-bottom');
         observer.unobserve(entry.target); // Rimuove l'osservazione dopo l'ingresso nella viewport
       }
     });
